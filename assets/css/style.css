@@ -58,8 +58,8 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 }
 
 :root .v-dark, :root .v-dark-head {
-  --bg-color: #131313;
-  --assistant-color: #191919;
+  --bg-color: #023e48;
+  --assistant-color: linear-gradient(to right, #02252b, #1c4b55);
   --theme-color: #e4e4dd;
   --font-color: #ddd;
   --heading-color: #fff;
@@ -68,6 +68,7 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
   --reverse-color: #f9f9f9;
   --reverse-heading-color: #000;
   --bg-btn: #0a0909;
+  --qeep-color: #f04a2b;
 }
 :root .v-dark .background-theme, :root .v-dark.background-theme, :root .v-dark-head .background-theme, :root .v-dark-head.background-theme {
   --font-color: #0009;
@@ -76,8 +77,8 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 
 @media only screen and (max-width: 991px) {
   .v-dark-head-mobile {
-    --bg-color: #131313;
-    --assistant-color: #191919;
+    --bg-color: #023e48;
+    --assistant-color: linear-gradient(to right, #02252b, #1c4b55);
     --theme-color: #e4e4dd;
     --font-color: #ddd;
     --heading-color: #fff;
@@ -472,7 +473,7 @@ body:not(.dsn-cursor-effect) #dsn_cursor, body:not(.dsn-cursor-effect) #dsn_curs
   z-index: 99;
 }
 .bg-load svg {
-  fill: var(--dsn-color-icon, var(--theme-color));
+  fill:  var(--qeep-color);
   pointer-events: none;
   width: 100%;
   height: 150px;
@@ -524,7 +525,7 @@ body:not(.dsn-cursor-effect) #dsn_cursor, body:not(.dsn-cursor-effect) #dsn_curs
 
 .footer-animate.svg-animate .dsn-separator {
   top: 0;
-  fill: var(--dsn-color-icon, var(--theme-color));
+  fill:  var(--bg-color);
   position: absolute;
   display: block;
   pointer-events: none;
@@ -800,7 +801,7 @@ fieldset form input {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--border-color);
+  background-color:  #0097b1;
   transform-origin: right;
 }
 .dsn-def-btn.dsn-hover-icon .dsn-btn .dsn-icon {
@@ -820,7 +821,7 @@ fieldset form input {
   height: 7px;
   line-height: 7px;
   border-radius: 50px;
-  border: 1px solid var(--heading-color);
+  border: 1px solid var(--qeep-color);
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
@@ -911,7 +912,7 @@ a:hover, a:active {
   align-items: center;
 }
 .site-header .dsn-svg-transition {
-  fill: var(--assistant-color);
+  fill: #09434d;
 }
 .site-header .bg-load:not(.dsn-svg-transition) {
   opacity: 0;
@@ -1098,7 +1099,8 @@ a:hover, a:active {
     font-family: var(--border-color);
     pointer-events: none;
     font-size: 14px;
-    opacity: 0.3;
+    opacity: 0.9;
+    color: #f04a2b;
   }
 }
 .site-header.dsn-hamburger ul.primary-nav li {
@@ -1372,7 +1374,7 @@ a:hover, a:active {
   }
 }
 .site-header.dsn-hamburger .container-content .sm-title-block {
-  color: #a56433;
+  color: #f04a2b;
 }
 .site-header.dsn-hamburger .container-content .nav-social ul li {
   position: relative;
@@ -1776,7 +1778,7 @@ a:hover, a:active {
 }
 .next-container.next-container .triangle,
 .prev-container.next-container .triangle {
-  border-left: 6px solid var(--heading-color);
+  border-left: 6px solid var(--qeep-color);
   margin-right: 19.5px;
 }
 .next-container.next-container svg,
@@ -1790,7 +1792,7 @@ a:hover, a:active {
 }
 .next-container.prev-container .triangle,
 .prev-container.prev-container .triangle {
-  border-right: 6px solid var(--heading-color);
+  border-right: 6px solid var(--qeep-color);
   margin-left: 19.5px;
 }
 .next-container.prev-container svg,
@@ -1810,7 +1812,7 @@ a:hover, a:active {
   position: relative;
   width: 55px;
   height: 1px;
-  background-color: var(--border-color);
+  background-color: var(--qeep-color);
   transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   transform-origin: right;
 }
@@ -1822,7 +1824,7 @@ a:hover, a:active {
 }
 .next-container .container-inner svg circle,
 .prev-container .container-inner svg circle {
-  stroke: var(--border-color);
+  stroke: var(--qeep-color);
   stroke-dasharray: 1px;
 }
 .next-container svg circle,
@@ -2400,7 +2402,7 @@ a:hover, a:active {
 }
 .main-slider .dsn-paginate-arrow .next-arrow svg, .main-slider .dsn-paginate-arrow .prev-arrow svg {
   transition: 0.5s;
-  stroke: var(--heading-color);
+  stroke: #f04a2b;
 }
 .main-slider .dsn-paginate-arrow .next-arrow svg:not(.arrow), .main-slider .dsn-paginate-arrow .prev-arrow svg:not(.arrow) {
   width: 50px;
@@ -3874,21 +3876,21 @@ img:not(.dsn-lazy-loading) {
 
 .dsn-icon i {
   font-size: var(--dsn-icon-size, 20px);
-  color: var(--dsn-color-icon, var(--theme-color));
+  color: var(--dsn-color-icon, var(--qeep-color));
 }
 .dsn-icon svg {
   width: var(--dsn-icon-size, 20px);
   height: var(--dsn-icon-size, 20px);
 }
 .dsn-icon svg, .dsn-icon svg path {
-  fill: var(--dsn-color-icon, var(--theme-color));
+  fill: var(--dsn-color-icon, var(--qeep-color));
 }
 .text-center .dsn-icon {
   margin: 0 auto;
 }
 
 .dsn-icon-theme-color {
-  --dsn-color-icon: var(--theme-color);
+  --dsn-color-icon: var(--qeep-color);
 }
 
 .dsn-icon-heading-color {
@@ -3975,6 +3977,7 @@ img:not(.dsn-lazy-loading) {
 }
 .list-with-number .number-item {
   position: relative;
+  background: #0d606e;
 }
 .list-with-number .number-item:before {
   counter-increment: workcounter;
