@@ -2387,6 +2387,7 @@ a:hover, a:active {
   bottom: auto;
   line-height: 45px;
   margin-right: 15px;
+  padding-left: 15px;
 }
 .main-slider .control-nav .dsn-pagination span.sm-title-block:not(.total) {
   transform: scaleY(1.5) translateY(-4px) rotate(12deg);
